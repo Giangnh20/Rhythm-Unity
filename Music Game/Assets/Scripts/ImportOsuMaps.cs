@@ -6,9 +6,9 @@ namespace Assets.Scripts
 {
     public class ImportOsuMaps : MonoBehaviour
     {
-        private string osuMapFolder;
-        private string gameMapFolder;
-        private string[] osuMapFolderPaths;
+        [SerializeField] private string osuMapFolder;
+        [SerializeField] private string gameMapFolder;
+      [SerializeField]  private string[] osuMapFolderPaths;
         // Use this for initialization
 
         // Currently assumes its osu file only

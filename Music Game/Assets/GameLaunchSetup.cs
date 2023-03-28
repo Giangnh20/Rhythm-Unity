@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace Assets
 {
-    public class GameLaunchSetup
+    public class GameLaunchSetup : MonoBehaviour
     {
         public string mapsDir { get; private set; }
         public string mapsDirIn { get; private set; }
@@ -28,7 +28,7 @@ namespace Assets
 
         private GameLaunchSetup()
         {
-            Application.targetFrameRate = 300;
+           // Application.targetFrameRate = 300;
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
             platform = Application.platform;
             switch (platform)

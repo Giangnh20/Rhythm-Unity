@@ -90,6 +90,11 @@ namespace Assets.Scripts.TapTapAim
             {
 
                 var hitObject = GameStartParameters.MapJson.map[index].Split(',');
+                for (int i = 0; i < hitObject.Length; i++)
+                {
+                    Debug.Log(hitObject[i]);
+                }
+                Debug.Log("enddd");
                 if (hitObject.Length == 7)
                 {
                     //spinner
